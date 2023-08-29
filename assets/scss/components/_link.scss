@@ -1,0 +1,16 @@
+.event-link {
+  position: relative;
+  z-index: 1;
+}
+
+.event-link:hover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  @apply bg-yellow;
+}

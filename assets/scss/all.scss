@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Yeseva One", "Noto Serif TC", system-ui, sans-serif;
+  }
+  body {
+    background-color: #f3f1e5;
+  }
+}
+
+@import "./components/swiper.scss";
+@import "./components/link.scss";
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./pages/index.scss";

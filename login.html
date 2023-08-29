@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>活動訂票網</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <script type="module" crossorigin src="/hexschoolcsslessonp4/assets/main-cec67283.js"></script>
+  <link rel="stylesheet" href="/hexschoolcsslessonp4/assets/main-8c205963.css">
+</head>
+
+<body>
+  <header class="relative ">
+  <div
+    class="flex justify-between items-center py-6 container px-3 md:px-0 border-b-2 md:border-b-[3px] border-primary">
+    <div class="flex items-center">
+      <a class="flex items-center" href="./index.html">
+        <img class="w-[39px] md:w-[53px]"
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true" alt="logo">
+        <h1 class="text-3xl ms-4 hidden md:block">7TAO</h1>
+        <p class="ms-1 hidden md:block shrink-0">活動訂票網</p>
+      </a>
+
+      <div class="flex h-[40px] md:h-[55px] ms-6 lg:ms-12">
+        <input type="search"
+          class="font-sans bg-transparent border-2 border-solid border-primary px-6 w-full shrink focus:ring-0 focus:shadow-none focus:outline-none focus:border-primary"
+          placeholder="探索活動" aria-label="Search" />
+        <button type="button" class="bg-primary text-yellow p-2 md:p-4">
+          <i class="icofont-search-1"></i>
+        </button>
+      </div>
+    </div>
+
+    <ul class="hidden md:flex">
+      <li>
+        <a class="flex items-center hover:text-olive" href="#">
+          <i class="icofont-file-text me-1"></i>
+          REGISTER
+        </a>
+      </li>
+      <li class="ms-3 lg:ms-6">
+        <a class="flex items-center hover:text-olive" href="./login.html">
+          <i class="icofont-ui-user me-1"></i>
+          LOGIN
+        </a>
+      </li>
+    </ul>
+    <div id="menubtn"
+      class="block md:hidden px-3 md:px-4 py-2 md:py-3 space-y-2 rounded border border-primary cursor-pointer ms-6">
+      <span class="block w-6 h-0.5 bg-primary"></span>
+      <span class="block w-6 h-0.5 bg-primary"></span>
+      <span class="block w-6 h-0.5 bg-primary"></span>
+    </div>
+  </div>
+  <div id="menu"
+    class="absolute top-full h-0 w-full transition-all ease-out duration-700 overflow-hidden bg-[#f3f1e5] z-10">
+    <ul class="flex flex-col border-b-2 border-primary py-6 px-3">
+      <li>
+        <a class="text-lg" href="./" title="REGISTER">
+          <i class="icofont-file-text me-1"></i>
+          REGISTER</a>
+      </li>
+      <li class="mt-4">
+        <a class="text-lg" href="./login.html" title="LOGIN"><i class="icofont-ui-user me-1"></i>LOGIN</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <main>
+      <div class="container px-3 md:px-0 pt-6 md:pt-15 pb-44 max-w-[416px]">
+        <img class="w-8 mx-auto"
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+          alt="裝飾image">
+        <h2 class="text-2xl text-center mt-4">會員登入</h2>
+
+        <form class="mb-44" action="">
+          <label class="block font-sans mt-4" for="account">帳號</label>
+          <div class="mt-2">
+            <input
+              class="font-sans bg-transparent border-2 border-solid border-primary py-2 px-4 w-full focus:ring-0 focus:shadow-none focus:outline-none focus:border-primary"
+              id="account" name="account" type="text" autocomplete="account" placeholder="請輸入帳號" required>
+          </div>
+
+          <label class="block font-sans mt-4" for="password">密碼</label>
+          <div class="mt-2">
+            <input
+              class="font-sans bg-transparent border-2 border-solid border-primary py-2 px-4 w-full focus:ring-0 focus:shadow-none focus:outline-none focus:border-primary"
+              id="password" name="password" type="password" autocomplete="password" placeholder="請輸入密碼" required>
+          </div>
+
+          <button type="button"
+            class="flex items-center justify-center bg-primary text-white hover:text-yellow p-4 md:p-2 mt-8 w-full">
+            <span class="md:text-xl">登入</span>
+            <span class="material-symbols-outlined ms-1">
+              keyboard_double_arrow_right
+            </span>
+          </button>
+        </form>
+
+      </div>
+    </main>
+
+    <footer class="border-t-[3px] border-primary py-8 mt-12 md:mt-15">
+  <p class="text-center text-sm md:text-base">© 7TAO七逃. All Rights Reserved</p>
+</footer>
+      
+</body>
+
+</html>
